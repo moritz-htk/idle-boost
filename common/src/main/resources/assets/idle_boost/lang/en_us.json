@@ -1,0 +1,13 @@
+{
+  "text.autoconfig.idle_boost.option.backgroundFps": "Background FPS",
+  "text.autoconfig.idle_boost.option.backgroundFps.@Tooltip": "FPS used when Minecraft is inactive",
+  "text.autoconfig.idle_boost.option.backgroundRenderDistance": "Background Render Distance",
+  "text.autoconfig.idle_boost.option.backgroundRenderDistance.@Tooltip": "Render Distance used when Minecraft is inactive",
+  "text.autoconfig.idle_boost.option.fpsToggle": "Reduce FPS (frames per second)",
+  "text.autoconfig.idle_boost.option.fpsToggle.@Tooltip": "Whether FPS should be reduced while Minecraft is inactive",
+  "text.autoconfig.idle_boost.option.renderDistanceToggle": "Reduce Render Distance",
+  "text.autoconfig.idle_boost.option.renderDistanceToggle.@Tooltip": "Whether Render Distance should be reduced while Minecraft is inactive",
+  "text.autoconfig.idle_boost.option.volumeToggle": "Reduce Volume",
+  "text.autoconfig.idle_boost.option.volumeToggle.@Tooltip": "Whether Volume should be reduced while Minecraft is inactive",
+  "text.autoconfig.idle_boost.title": "Idle Boost Options"
+}

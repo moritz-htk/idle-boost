@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "idle_boost",
+  "version": "${version}",
+  "name": "Idle Boost",
+  "description": "This mod optimizes performance when Minecraft is running in the background.",
+  "authors": [
+    "moritz_htk"
+  ],
+  "contact": {
+    "homepage": "https://sites.google.com/view/moritz-htk/mods/idle-boost",
+    "issues": "https://github.com/moritz-htk/idle-boost/issues",
+    "sources": "https://github.com/moritz-htk/idle-boost"
+  },
+  "license": "moritz_htk Software License Agreement (mSLA)",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.moritz_htk.idle_boost.fabric.IdleBoostFabric"
+    ],"modmenu": [
+      "net.moritz_htk.idle_boost.fabric.config.IBModMenuImplementation"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "architectury": ">=13.0.2",
+    "cloth-config2": ">=15.0.127"
+  },
+  "recommends": {
+    "modmenu": ">=11.0.1"
+  },
+  "custom": {
+    "modmenu": {
+      "update_checker": true,
+      "links": {
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/idle-boost",
+        "modmenu.github_releases": "https://github.com/moritz-htk/idle-boost/releases",
+        "modmenu.modrinth": "https://modrinth.com/mod/idle-boost"
+      }
+    }
+  }
+}
