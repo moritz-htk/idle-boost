@@ -14,7 +14,7 @@
   },
   "license": "moritz_htk Software License Agreement (mSLA)",
   "icon": "icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
       "net.moritz_htk.idle_boost.fabric.IdleBoostFabric"
