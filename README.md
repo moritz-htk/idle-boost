@@ -17,7 +17,7 @@ There are some advantages this mod has over other similar mods:
 ## Latest versions
 | Version | Latest Version | Mod Loader       | Support |
 |---------|----------------|------------------|---------|
-| 1.21.x  | 1.0.0+1.21     | Fabric, NeoForge | Active  |
+| 1.21.x  | 1.0.1+1.21     | Fabric, NeoForge | Active  |
 
 Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the release list!
 
@@ -25,7 +25,7 @@ Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the re
 - English, German
 
 ## Dependencies
-- [Architectury API](https://github.com/architectury/architectury-api) (v13.0.2 and above)
+- [Architectury API](https://github.com/architectury/architectury-api) (v13.0.3 and above)
 - [Cloth Config API](https://github.com/shedaniel/cloth-config) (v15.0.127 and above)
 
 ## Social Media
