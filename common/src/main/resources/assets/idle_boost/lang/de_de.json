@@ -3,7 +3,7 @@
   "text.autoconfig.idle_boost.option.backgroundFps.@Tooltip": "FPS, wenn Minecraft inaktiv ist",
   "text.autoconfig.idle_boost.option.backgroundRenderDistance": "Hintergrund-Sichtweite",
   "text.autoconfig.idle_boost.option.backgroundRenderDistance.@Tooltip": "Sichtweite, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.option.fpsToggle": "FPS reduzieren",
+  "text.autoconfig.idle_boost.option.fpsToggle": "FPS (Bilder pro Sekunde) reduzieren",
   "text.autoconfig.idle_boost.option.fpsToggle.@Tooltip": "Ob die FPS reduziert werden sollen, wenn Minecraft inaktiv ist",
   "text.autoconfig.idle_boost.option.renderDistanceToggle": "Sichtweite reduzieren",
   "text.autoconfig.idle_boost.option.renderDistanceToggle.@Tooltip": "Ob die Sichtweite reduziert werden soll, wenn Minecraft inaktiv ist",
