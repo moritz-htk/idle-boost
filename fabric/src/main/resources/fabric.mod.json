@@ -18,7 +18,8 @@
   "entrypoints": {
     "client": [
       "net.moritz_htk.idle_boost.fabric.IdleBoostFabric"
-    ],"modmenu": [
+    ],
+    "modmenu": [
       "net.moritz_htk.idle_boost.fabric.config.IBModMenuImplementation"
     ]
   },
