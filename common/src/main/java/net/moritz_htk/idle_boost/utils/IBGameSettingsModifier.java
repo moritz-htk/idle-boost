@@ -3,7 +3,7 @@ package net.moritz_htk.idle_boost.utils;
 import dev.architectury.event.events.client.ClientTickEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
-import net.minecraft.client.gui.screens.options.VideoSettingsScreen;
+import net.minecraft.client.gui.screens.VideoSettingsScreen;
 import net.minecraft.sounds.SoundSource;
 import net.moritz_htk.idle_boost.IdleBoost;
 
