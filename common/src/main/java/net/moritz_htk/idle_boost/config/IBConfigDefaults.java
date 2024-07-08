@@ -1,34 +1,37 @@
 package net.moritz_htk.idle_boost.config;
 
+/**
+ * Default configuration values for Idle Boost.
+ */
 public class IBConfigDefaults implements IBConfig {
-    public static final boolean FPS_TOGGLE = true;
-    public static final boolean RENDER_DISTANCE_TOGGLE = true;
-    public static final boolean VOLUME_TOGGLE = true;
-    public static final int BACKGROUND_FPS = 10;
-    public static final int BACKGROUND_RENDER_DISTANCE = 2;
+    public static final boolean DEFAULT_FPS_TOGGLE = true;
+    public static final boolean DEFAULT_RENDER_DISTANCE_TOGGLE = true;
+    public static final boolean DEFAULT_VOLUME_TOGGLE = true;
+    public static final int DEFAULT_BACKGROUND_FPS = 10;
+    public static final int DEFAULT_BACKGROUND_RENDER_DISTANCE = 2;
 
     @Override
-    public boolean fpsToggle() {
-        return FPS_TOGGLE;
+    public boolean isFpsToggleEnabled() {
+        return DEFAULT_FPS_TOGGLE;
     }
 
     @Override
-    public boolean renderDistanceToggle() {
-        return RENDER_DISTANCE_TOGGLE;
+    public boolean isRenderDistanceToggleEnabled() {
+        return DEFAULT_RENDER_DISTANCE_TOGGLE;
     }
 
     @Override
-    public boolean volumeToggle() {
-        return VOLUME_TOGGLE;
+    public boolean isVolumeToggleEnabled() {
+        return DEFAULT_VOLUME_TOGGLE;
     }
 
     @Override
-    public int backgroundFps() {
-        return BACKGROUND_FPS;
+    public int getBackgroundFps() {
+        return DEFAULT_BACKGROUND_FPS;
     }
 
     @Override
-    public int backgroundRenderDistance() {
-        return BACKGROUND_RENDER_DISTANCE;
+    public int getBackgroundRenderDistance() {
+        return DEFAULT_BACKGROUND_RENDER_DISTANCE;
     }
 }
