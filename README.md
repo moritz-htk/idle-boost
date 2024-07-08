@@ -17,7 +17,7 @@ There are some advantages this mod has over other similar mods:
 ## Latest versions
 | Version | Latest Version | Mod Loader       | Support |
 |---------|----------------|------------------|---------|
-| 1.20.x  | 1.0.1+1.20.6   | Fabric, NeoForge | Active  |
+| 1.20.x  | 1.1.0+1.20.6   | Fabric, NeoForge | Active  |
 
 Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the release list!
 
