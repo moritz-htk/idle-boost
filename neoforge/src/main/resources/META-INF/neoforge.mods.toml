@@ -30,7 +30,7 @@ issueTrackerURL="https://github.com/moritz-htk/idle-boost/issues"
 [[dependencies.idle_boost]]
     modId="architectury"
     type="required"
-    versionRange="[12.1.3,)"
+    versionRange="[12.1.4,)"
     ordering="AFTER"
     side="BOTH"
 
