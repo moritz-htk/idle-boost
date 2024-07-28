@@ -85,6 +85,8 @@ unifiedPublishing {
             depends {
                 curseforge = "architectury-api"
                 modrinth = "architectury-api"
+            }
+            depends {
                 curseforge = "cloth-config"
                 modrinth = "cloth-config"
             }
