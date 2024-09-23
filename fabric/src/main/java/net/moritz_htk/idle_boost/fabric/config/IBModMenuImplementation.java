@@ -2,21 +2,19 @@ package net.moritz_htk.idle_boost.fabric.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
-import me.shedaniel.autoconfig.AutoConfig;
-import net.moritz_htk.idle_boost.config.IBConfigData;
+import net.moritz_htk.idle_boost.config.IBConfigScreen;
 
 /**
- * Implementation of the ModMenuApi for Idle Boost.
- * Provides a configuration screen factory for the mod's settings.
+ * Implementation of the ModMenuApi for the Idle Boost mod.
  */
 public class IBModMenuImplementation implements ModMenuApi {
     /**
-     * Returns the configuration screen factory for the Idle Boost mod.
+     * Returns the factory for creating the configuration screen.
      *
-     * @return a ConfigScreenFactory that generates the configuration screen.
+     * @return the configuration screen factory
      */
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        return parent -> AutoConfig.getConfigScreen(IBConfigData.class, parent).get();
+        return IBConfigScreen::new;
     }
 }

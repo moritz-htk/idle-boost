@@ -16,27 +16,13 @@ issueTrackerURL="https://github.com/moritz-htk/idle-boost/issues"
 [[dependencies.idle_boost]]
     modId="neoforge"
     type="required"
-    versionRange="[21.0.143,)"
+    versionRange="[21.1,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.idle_boost]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21,)"
+    versionRange="[1.21.1,)"
     ordering="NONE"
-    side="BOTH"
-
-[[dependencies.idle_boost]]
-    modId="architectury"
-    type="required"
-    versionRange="[13.0.6,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.idle_boost]]
-    modId="cloth_config"
-    type="required"
-    versionRange="[15.0.128,)"
-    ordering="AFTER"
     side="BOTH"

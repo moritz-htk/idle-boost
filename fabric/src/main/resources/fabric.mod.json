@@ -24,13 +24,13 @@
     ]
   },
   "depends": {
-    "fabric": "*",
-    "minecraft": ">=1.21",
-    "architectury": ">=13.0.6",
-    "cloth-config2": ">=15.0.128"
+    "fabricloader": ">=0.16.5",
+    "minecraft": ">=1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
   },
   "recommends": {
-    "modmenu": ">=11.0.1"
+    "modmenu": ">=11.0.2"
   },
   "custom": {
     "modmenu": {
@@ -38,7 +38,8 @@
       "links": {
         "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/idle-boost",
         "modmenu.github_releases": "https://github.com/moritz-htk/idle-boost/releases",
-        "modmenu.modrinth": "https://modrinth.com/mod/idle-boost"
+        "modmenu.modrinth": "https://modrinth.com/mod/idle-boost",
+        "modmenu.paypal": "https://www.paypal.com/donate/?hosted_button_id=CADH35AVDHEMW"
       }
     }
   }

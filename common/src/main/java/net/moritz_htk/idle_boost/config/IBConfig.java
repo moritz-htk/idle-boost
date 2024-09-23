@@ -1,12 +1,13 @@
 package net.moritz_htk.idle_boost.config;
 
 /**
- * Interface for Idle Boost configuration.
+ * Configuration class for Idle Boost mod.
  */
-public interface IBConfig {
-    boolean isFpsToggleEnabled();
-    boolean isRenderDistanceToggleEnabled();
-    boolean isVolumeToggleEnabled();
-    int getBackgroundFps();
-    int getBackgroundRenderDistance();
+public class IBConfig {
+    public boolean modToggle = true;
+    public boolean framerateLimitToggle = true;
+    public int framerateLimit = 10;
+    public boolean renderDistanceToggle = true;
+    public int renderDistance = 2;
+    public boolean debugModeToggle = false;
 }
