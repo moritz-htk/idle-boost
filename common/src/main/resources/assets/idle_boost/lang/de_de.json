@@ -1,13 +1,12 @@
 {
-  "text.autoconfig.idle_boost.option.backgroundFps": "Hintergrund-FPS",
-  "text.autoconfig.idle_boost.option.backgroundFps.@Tooltip": "FPS, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.option.backgroundRenderDistance": "Hintergrund-Sichtweite",
-  "text.autoconfig.idle_boost.option.backgroundRenderDistance.@Tooltip": "Sichtweite, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.option.fpsToggle": "FPS (Bilder pro Sekunde) reduzieren",
-  "text.autoconfig.idle_boost.option.fpsToggle.@Tooltip": "Ob die FPS reduziert werden sollen, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.option.renderDistanceToggle": "Sichtweite reduzieren",
-  "text.autoconfig.idle_boost.option.renderDistanceToggle.@Tooltip": "Ob die Sichtweite reduziert werden soll, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.option.volumeToggle": "Lautstärke reduzieren",
-  "text.autoconfig.idle_boost.option.volumeToggle.@Tooltip": "Ob die Lautstärke reduziert werden soll, wenn Minecraft inaktiv ist",
-  "text.autoconfig.idle_boost.title": "Idle Boost Optionen"
+  "modmenu.descriptionTranslation.idle_boost": "Diese Mod optimiert die Leistung, wenn Minecraft im Hintergrund läuft.",
+  "options.idle_boost.debugModeToggle": "Debug-Modus",
+  "options.idle_boost.debugModeToggle.tooltip": "Aktiviert oder deaktiviert den Debug-Modus für zusätzliche Ausgaben in der Konsole. (Nützlich zum Finden oder Melden von Fehlern)",
+  "options.idle_boost.framerateLimit.tooltip": "Legt die maximale Bildrate fest, wenn Minecraft inaktiv ist.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der maximalen Bildrate, wenn Minecraft inaktiv ist.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Aktiviert oder deaktiviert die Idle Boost-Funktionen.",
+  "options.idle_boost.renderDistance.tooltip": "Legt die Sichtweite fest, wenn Minecraft inaktiv ist.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der Sichtweite, wenn Minecraft inaktiv ist.",
+  "options.idle_boost.title": "Idle Boost Optionen"
 }

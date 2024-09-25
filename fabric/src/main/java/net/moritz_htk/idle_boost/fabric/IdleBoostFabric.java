@@ -1,18 +1,20 @@
 package net.moritz_htk.idle_boost.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.moritz_htk.idle_boost.IdleBoost;
+import net.moritz_htk.idle_boost.util.IBWindowActivityHandler;
 
 /**
- * Fabric-specific initialization class for the Idle Boost mod.
- * Implements the ClientModInitializer interface to initialize the mod on the client side.
+ * Fabric client initializer for the Idle Boost mod.
  */
 public class IdleBoostFabric implements ClientModInitializer {
     /**
-     * Initializes the Idle Boost mod on the client side.
+     * Initializes the client-side components of the Idle Boost mod.
      */
     @Override
     public void onInitializeClient() {
         IdleBoost.init();
+        ClientTickEvents.START_CLIENT_TICK.register(client -> IBWindowActivityHandler.handleClientTick());
     }
 }

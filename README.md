@@ -6,27 +6,27 @@
 ![Version Availability](https://cf.way2muchnoise.eu/versions/1054545.svg?badge_style=for_the_badge)
 [![License](https://img.shields.io/badge/LICENSE-moritz__htk_Software_License_Agreement_(mSLA)-red?style=for-the-badge)](https://sites.google.com/view/moritz-htk/license)
 
-**Idle Boost** was created by [moritz_htk](https://github.com/moritz-htk) with inspiration from [Idle Tweaks](https://github.com/Armandukx/IdleFPS) by [Armandukx](https://github.com/Armandukx). This mod reduces FPS, render distance and volume when Minecraft is running in the background.
+**Idle Boost** was created by [moritz_htk](https://github.com/moritz-htk). This mod reduces FPS and render distance when Minecraft is running in the background.
 
 There are some advantages this mod has over other similar mods:
-- Easy to configure due to the use of [Cloth Config API](https://github.com/shedaniel/cloth-config)
-- Works on Fabric and NeoForge due to the use of [Architectury API](https://github.com/architectury/architectury-api)
-- Small and lightweight, with a file size of 22KB/23KB
+- Easy to configure via a custom options menu
+- Works on Fabric and NeoForge
+- No dependencies required
+- Small and lightweight, with a file size of 24KB/25KB
 - Open Source
 
 ## Latest versions
-| Version | Latest Version | Mod Loader       | Support |
-|---------|----------------|------------------|---------|
-| 1.20.x  | 1.1.1+1.20.6   | Fabric, NeoForge | Active  |
+| Version | Latest Version | Mod Loader       | Support       |
+|---------|----------------|------------------|---------------|
+| 1.20.1  | 1.2.0+1.20.1   | Fabric, Forge    | Bugfixes only |
+| 1.20.x  | 1.2.0+1.20.6   | Fabric, NeoForge | Active        |
 
 Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the release list!
 
 ## Supported languages
 - English, German
 
-## Dependencies
-- [Architectury API](https://github.com/architectury/architectury-api) (v12.1.4 and above)
-- [Cloth Config API](https://github.com/shedaniel/cloth-config) (v14.0.126 and above)
+You can help translate Idle Boost! Click [here](https://crowdin.com/project/idle-boost)
 
 ## Social Media
 My website: [https://sites.google.com/view/moritz-htk](https://sites.google.com/view/moritz-htk)

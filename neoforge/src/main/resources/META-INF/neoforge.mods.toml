@@ -26,17 +26,3 @@ issueTrackerURL="https://github.com/moritz-htk/idle-boost/issues"
     versionRange="[1.20.6,)"
     ordering="NONE"
     side="BOTH"
-
-[[dependencies.idle_boost]]
-    modId="architectury"
-    type="required"
-    versionRange="[12.1.4,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.idle_boost]]
-    modId="cloth_config"
-    type="required"
-    versionRange="[14.0.126,)"
-    ordering="AFTER"
-    side="BOTH"

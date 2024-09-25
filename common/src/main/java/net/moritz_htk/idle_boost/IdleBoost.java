@@ -1,15 +1,6 @@
 package net.moritz_htk.idle_boost;
 
-import dev.architectury.event.events.client.ClientLifecycleEvent;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.Options;
-import net.minecraft.sounds.SoundSource;
-import net.moritz_htk.idle_boost.config.IBConfig;
-import net.moritz_htk.idle_boost.config.IBConfigData;
-import net.moritz_htk.idle_boost.config.IBConfigDefaults;
-import net.moritz_htk.idle_boost.utils.IBGameSettingsModifier;
+import net.moritz_htk.idle_boost.config.IBConfigManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,69 +9,30 @@ import org.slf4j.LoggerFactory;
  */
 public class IdleBoost {
     public static final String MOD_ID = "idle_boost";
-    public static IBConfig CONFIG = new IBConfigDefaults();
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    public static Options GAME_SETTINGS;
-    public static int FPS = IBConfigDefaults.DEFAULT_BACKGROUND_FPS;
-    public static int RENDER_DISTANCE = IBConfigDefaults.DEFAULT_BACKGROUND_RENDER_DISTANCE;
-    private static boolean RETRIEVED = false;
-    public static boolean CLOSING = false;
+    public static final Logger LOGGER = LoggerFactory.getLogger("Idle Boost");
 
     /**
-     * Initializes the Idle Boost mod by registering configuration and event handlers.
+     * Initializes the Idle Boost mod.
      */
     public static void init() {
         LOGGER.info("Initializing Idle Boost...");
-        CONFIG = AutoConfig.register(IBConfigData.class, GsonConfigSerializer::new).getConfig();
-        IBGameSettingsModifier.init();
-
-        ClientLifecycleEvent.CLIENT_STARTED.register(client -> {
-            LOGGER.info("Client started event triggered");
-            retrieveInitialSettings();
-        });
-
-        ClientLifecycleEvent.CLIENT_STOPPING.register(server -> {
-            LOGGER.info("Client stopping event triggered");
-            restoreSettingsOnExit();
-        });
-
+        IBConfigManager.loadConfig();
         LOGGER.info("Idle Boost initialized");
     }
 
     /**
-     * Retrieves the initial game settings when the client starts.
+     * Logs debug messages if debug mode is enabled.
+     *
+     * @param message  The message to log.
+     * @param argument The optional argument to include in the message.
      */
-    private static void retrieveInitialSettings() {
-        GAME_SETTINGS = Minecraft.getInstance().options;
-        if (!RETRIEVED) {
-            FPS = GAME_SETTINGS.framerateLimit().get();
-            RENDER_DISTANCE = GAME_SETTINGS.renderDistance().get();
-            RETRIEVED = true;
-            LOGGER.info("Retrieved initial settings: FPS = {}, Render Distance = {}", FPS, RENDER_DISTANCE);
+    public static void logDebugMode(String message, Object... argument) {
+        if (IBConfigManager.getConfig().debugModeToggle) {
+            if (argument.length > 0) {
+                LOGGER.info(message, argument);
+            } else {
+                LOGGER.info(message);
+            }
         }
-    }
-
-    /**
-     * Restores the game settings when the client stops.
-     */
-    private static void restoreSettingsOnExit() {
-        if (CONFIG.isFpsToggleEnabled()) {
-            LOGGER.info("Restoring FPS limit to {}", FPS);
-            IBGameSettingsModifier.setFpsLimit(FPS);
-            GAME_SETTINGS.save();
-        }
-
-        if (CONFIG.isRenderDistanceToggleEnabled()) {
-            LOGGER.info("Restoring render distance to {}", RENDER_DISTANCE);
-            GAME_SETTINGS.renderDistance().set(RENDER_DISTANCE);
-            GAME_SETTINGS.save();
-        }
-
-        if (CONFIG.isVolumeToggleEnabled() && GAME_SETTINGS.getSoundSourceVolume(SoundSource.MASTER) <= 0) {
-            LOGGER.info("Resuming sound");
-            Minecraft.getInstance().getSoundManager().resume();
-        }
-
-        CLOSING = true;
     }
 }
