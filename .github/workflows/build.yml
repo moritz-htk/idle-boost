@@ -5,7 +5,7 @@ jobs:
   build:
     strategy:
       matrix:
-        java: [21]
+        java: [17]
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
@@ -25,18 +25,18 @@ jobs:
           CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
           MODRINTH_API_KEY: ${{ secrets.MODRINTH_API_KEY }}
       - name: Capture Build Artifacts
-        if: ${{ matrix.java == '21' }}
+        if: ${{ matrix.java == '17' }}
         uses: actions/upload-artifact@v4
         with:
           name: Build Artifacts
           path: |
             common/build/libs/*.jar
             fabric/build/libs/*.jar
-            neoforge/build/libs/*.jar
+            forge/build/libs/*.jar
             !common/build/libs/*-sources.jar
             !common/build/libs/*-transformProductionFabric.jar
-            !common/build/libs/*-transformProductionNeoForge.jar
+            !common/build/libs/*-transformProductionForge.jar
             !fabric/build/libs/*-dev-shadow.jar
             !fabric/build/libs/*-sources.jar
-            !neoforge/build/libs/*-dev-shadow.jar
-            !neoforge/build/libs/*-sources.jar
+            !forge/build/libs/*-dev-shadow.jar
+            !forge/build/libs/*-sources.jar

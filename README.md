@@ -10,7 +10,7 @@
 
 There are some advantages this mod has over other similar mods:
 - Easy to configure via a custom options menu
-- Works on Fabric and NeoForge
+- Works on Fabric and Forge
 - No dependencies required
 - Small and lightweight, with a file size of 24KB/25KB
 - Open Source
@@ -19,7 +19,6 @@ There are some advantages this mod has over other similar mods:
 | Version | Latest Version | Mod Loader       | Support       |
 |---------|----------------|------------------|---------------|
 | 1.20.1  | 1.2.0+1.20.1   | Fabric, Forge    | Bugfixes only |
-| 1.20.x  | 1.2.0+1.20.6   | Fabric, NeoForge | Active        |
 
 Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the release list!
 

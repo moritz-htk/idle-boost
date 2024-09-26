@@ -5,7 +5,7 @@ plugins {
 
 architectury {
     platformSetupLoomIde()
-    neoForge()
+    forge()
 }
 
 configurations {
@@ -17,7 +17,7 @@ configurations {
     shadowCommon
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
-    developmentNeoForge.extendsFrom common
+    developmentForge.extendsFrom common
 
     shadowBundle {
         canBeResolved = true
@@ -25,21 +25,17 @@ configurations {
     }
 }
 
-repositories {
-    maven { url "https://maven.neoforged.net/releases/" }
-}
-
 dependencies {
-    neoForge "net.neoforged:neoforge:${neoforge_version}"
+    forge "net.minecraftforge:forge:${forge_version}"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
-    shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
+    shadowBundle project(path: ':common', configuration: 'transformProductionForge')
 }
 
 processResources {
     inputs.property 'version', project.version
 
-    filesMatching('META-INF/neoforge.mods.toml') {
+    filesMatching('META-INF/mods.toml') {
         expand version: project.version
     }
 }
@@ -57,11 +53,11 @@ remapJar {
 
 unifiedPublishing {
     project {
-        displayName = "[NeoForge ${project.minecraft_version}] Idle Boost ${project.version}"
+        displayName = "[Forge ${project.minecraft_version}] Idle Boost ${project.version}"
         version = "${project.version}"
         releaseType = "release"
         gameVersions = ["${project.minecraft_version}"]
-        gameLoaders = ["neoforge"]
+        gameLoaders = ["forge"]
         changelog = project(":").file("changelog.md").text
 
         mainPublication tasks.remapJar

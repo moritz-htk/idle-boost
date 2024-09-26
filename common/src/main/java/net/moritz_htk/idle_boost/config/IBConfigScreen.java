@@ -3,16 +3,20 @@ package net.moritz_htk.idle_boost.config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.OptionInstance;
 import net.minecraft.client.Options;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.OptionsList;
 import net.minecraft.client.gui.screens.OptionsSubScreen;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
+import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 
 /**
  * Screen for configuring the Idle Boost mod.
  */
 public class IBConfigScreen extends OptionsSubScreen {
+    private OptionsList list;
 
     /**
      * Constructs a new IBConfigScreen.
@@ -28,16 +32,16 @@ public class IBConfigScreen extends OptionsSubScreen {
      */
     @Override
     protected void init() {
-        OptionsList list = this.addRenderableWidget(new OptionsList(this.minecraft, this.width, this.height, this));
+        this.list = new OptionsList(this.minecraft, this.width, this.height, 32, this.height - 32, 25);
 
-        list.addBig(OptionInstance.createBoolean(
+        this.list.addBig(OptionInstance.createBoolean(
                 I18n.get("options.idle_boost.modToggle"),
                 OptionInstance.cachedConstantTooltip(Component.translatable("options.idle_boost.modToggle.tooltip")),
                 IBConfigManager.getConfig().modToggle,
                 aBoolean -> IBConfigManager.getConfig().modToggle = !IBConfigManager.getConfig().modToggle
         ));
 
-        list.addSmall(
+        this.list.addSmall(
                 OptionInstance.createBoolean(
                         I18n.get("options.framerateLimit"),
                         OptionInstance.cachedConstantTooltip(Component.translatable("options.idle_boost.framerateLimitToggle.tooltip")),
@@ -54,7 +58,7 @@ public class IBConfigScreen extends OptionsSubScreen {
                 )
         );
 
-        list.addSmall(
+        this.list.addSmall(
                 OptionInstance.createBoolean(
                         I18n.get("options.renderDistance"),
                         OptionInstance.cachedConstantTooltip(Component.translatable("options.idle_boost.renderDistanceToggle.tooltip")),
@@ -71,14 +75,16 @@ public class IBConfigScreen extends OptionsSubScreen {
                 )
         );
 
-        list.addBig(OptionInstance.createBoolean(
+        this.list.addBig(OptionInstance.createBoolean(
                 I18n.get("options.idle_boost.debugModeToggle"),
                 OptionInstance.cachedConstantTooltip(Component.translatable("options.idle_boost.debugModeToggle.tooltip")),
                 IBConfigManager.getConfig().debugModeToggle,
                 aBoolean -> IBConfigManager.getConfig().debugModeToggle = !IBConfigManager.getConfig().debugModeToggle
         ));
 
-        super.init();
+        this.addWidget(this.list);
+
+        this.addRenderableWidget(Button.builder(CommonComponents.GUI_DONE, (button) -> this.minecraft.setScreen(this.lastScreen)).bounds(this.width / 2 - 100, this.height - 27, 200, 20).build());
     }
 
     /**
@@ -87,5 +93,10 @@ public class IBConfigScreen extends OptionsSubScreen {
     @Override
     public void removed() {
         IBConfigManager.saveConfig();
+    }
+
+    @Override
+    public void render(GuiGraphics guiGraphics, int i, int j, float f) {
+        this.basicListRender(guiGraphics, this.list, i, j, f);
     }
 }

@@ -1,28 +1,29 @@
 modLoader="javafml"
-loaderVersion="[3,)"
+loaderVersion="[47,)"
 license="moritz_htk Software License Agreement (mSLA)"
 issueTrackerURL="https://github.com/moritz-htk/idle-boost/issues"
+clientSideOnly=true
 
 [[mods]]
     modId="idle_boost"
     version="${version}"
     displayName="Idle Boost"
-    updateJSONURL="https://api.modrinth.com/updates/idle-boost/forge_updates.json?neoforge=only"
+    updateJSONURL="https://api.modrinth.com/updates/idle-boost/forge_updates.json"
     displayURL="https://sites.google.com/view/moritz-htk/mods/idle-boost"
     logoFile="icon.png"
     authors="moritz_htk"
     description='''This mod optimizes performance when Minecraft is running in the background.'''
 
 [[dependencies.idle_boost]]
-    modId="neoforge"
-    type="required"
-    versionRange="[20.6,)"
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.idle_boost]]
     modId="minecraft"
-    type="required"
-    versionRange="[1.20.6,)"
+    mandatory=true
+    versionRange="[1.20.1,)"
     ordering="NONE"
     side="BOTH"
