@@ -14,11 +14,11 @@ import net.neoforged.neoforge.common.NeoForge;
  * NeoForge client initializer for the Idle Boost mod.
  */
 @Mod(value = IdleBoost.MOD_ID, dist = Dist.CLIENT)
-public class IdleBoostNeoForge {
+public class IBNeoForge {
     /**
      * Constructs a new IdleBoostNeoForge instance and initializes the mod.
      */
-    public IdleBoostNeoForge() {
+    public IBNeoForge() {
         IdleBoost.init();
         ModLoadingContext.get().registerExtensionPoint(IConfigScreenFactory.class, () -> ((client, parent) -> new IBConfigScreen(parent)));
         NeoForge.EVENT_BUS.addListener(this::onClientTick);

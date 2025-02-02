@@ -8,7 +8,7 @@ import net.moritz_htk.idle_boost.util.IBWindowActivityHandler;
 /**
  * Fabric client initializer for the Idle Boost mod.
  */
-public class IdleBoostFabric implements ClientModInitializer {
+public class IBFabric implements ClientModInitializer {
     /**
      * Initializes the client-side components of the Idle Boost mod.
      */
