@@ -16,11 +16,14 @@ There are some advantages this mod has over other similar mods:
 - Open Source
 
 ## Latest versions
+Here is a list of all available versions:
+
 | Version | Latest Version | Mod Loader       | Support       |
 |---------|----------------|------------------|---------------|
+| 1.21.1  | 1.2.1+1.21.1   | Fabric, NeoForge | Active        |
+| 1.21    | 1.1.1+1.21     | Fabric, NeoForge | Stopped       |
+| 1.20.6  | 1.2.0+1.20.6   | Fabric, NeoForge | Stopped       |
 | 1.20.1  | 1.2.0+1.20.1   | Fabric, Forge    | Bugfixes only |
-| 1.20.x  | 1.2.0+1.20.6   | Fabric, NeoForge | Active        | 
-| 1.21.x  | 1.2.0+1.21.1   | Fabric, NeoForge | Active        |
 
 Click [here](https://github.com/moritz-htk/idle-boost/releases) to get to the release list!
 
