@@ -1,0 +1,12 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Esse mod otimiza o desempenho quando o Minecraft está sendo executado em segundo plano.",
+  "options.idle_boost.debugModeToggle": "Modo de Depuração",
+  "options.idle_boost.debugModeToggle.tooltip": "Ativa ou desativa o modo de depuração para saída adicional no console. (Útil para encontrar ou relatar bugs)",
+  "options.idle_boost.framerateLimit.tooltip": "Define a taxa de quadros máxima quando o Minecraft está inativo.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Ativa ou desativa se a taxa de quadros máxima deve ser limitada quando o Minecraft estiver inativo.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Ativa ou desativa os recursos do Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Define a distância de renderização quando o Minecraft está inativo.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Ativa ou desativa se a distância de renderização deve ser limitada quando o Minecraft estiver inativo.",
+  "options.idle_boost.title": "Opções de Idle Boost"
+}

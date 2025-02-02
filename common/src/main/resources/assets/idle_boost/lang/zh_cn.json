@@ -1,0 +1,12 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "这个模组优化Minecraft在后台运行时的性能",
+  "options.idle_boost.debugModeToggle": "调试模式",
+  "options.idle_boost.debugModeToggle.tooltip": "启用或禁用调试模式以输出到控制台 (用于查找或报告bug)",
+  "options.idle_boost.framerateLimit.tooltip": "设置 Minecraft不活动时的最大帧率",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Minecraft不活动时是否限制最大帧率",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "是否启用后台优化功能",
+  "options.idle_boost.renderDistance.tooltip": "设置 Minecraft不活动时的最大帧率",
+  "options.idle_boost.renderDistanceToggle.tooltip": "当Minecraft处于非活动状态时是否限制渲染距离",
+  "options.idle_boost.title": "后台优化选项"
+}
