@@ -1,4 +1,4 @@
-![Idle Boost icon](https://github.com/moritz-htk/idle-boost/blob/main/common/src/main/resources/icon.png)
+![Idle Boost icon](https://github.com/moritz-htk/idle-boost/blob/main/common/src/main/resources/assets/idle_boost/icon.png)
 
 [![CurseForge Downloads](https://cf.way2muchnoise.eu/short_1054545_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/idle-boost)
 [![Modrinth Downloads](https://img.shields.io/modrinth/dt/REC6ythZ?style=for-the-badge&logo=modrinth)](https://modrinth.com/mod/idle-boost)

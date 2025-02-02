@@ -9,7 +9,7 @@ issueTrackerURL="https://github.com/moritz-htk/idle-boost/issues"
     displayName="Idle Boost"
     updateJSONURL="https://api.modrinth.com/updates/idle-boost/forge_updates.json?neoforge=only"
     displayURL="https://sites.google.com/view/moritz-htk/mods/idle-boost"
-    logoFile="icon.png"
+    logoFile="assets/idle_boost/icon.png"
     authors="moritz_htk"
     description='''This mod optimizes performance when Minecraft is running in the background.'''
 

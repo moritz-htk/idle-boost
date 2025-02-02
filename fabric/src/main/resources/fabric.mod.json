@@ -13,7 +13,7 @@
     "sources": "https://github.com/moritz-htk/idle-boost"
   },
   "license": "moritz_htk Software License Agreement (mSLA)",
-  "icon": "icon.png",
+  "icon": "assets/idle_boost/icon.png",
   "environment": "client",
   "entrypoints": {
     "client": [
