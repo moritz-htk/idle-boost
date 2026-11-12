@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Bu mod, Minecraft etkin değilken kaynak kullanımını azaltır.",
+  "options.idle_boost.backgroundDelay": "Etkinleştirme Gecikmesi",
+  "options.idle_boost.backgroundDelay.immediate": "Hemen",
+  "options.idle_boost.backgroundDelay.seconds": "%s sn",
+  "options.idle_boost.backgroundDelay.tooltip": "Kare hızı ve görüş mesafesi sınırları uygulanmadan önce Minecraft’ın ne kadar süre etkin olmaması gerektiğini ayarlar. 0 saniyede sınırlar hemen uygulanır.",
+  "options.idle_boost.debugModeToggle": "Hata Ayıklama Modu",
+  "options.idle_boost.debugModeToggle.tooltip": "Hataları bulmaya veya bildirmeye yardımcı olmak için konsolda ek günlük iletilerini etkinleştirir.",
+  "options.idle_boost.framerateLimit.tooltip": "Minecraft etkin değilken en yüksek kare hızını ayarlar.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Minecraft etkin değilken kare hızı sınırını etkinleştirir veya devre dışı bırakır.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Idle Boost özelliklerini etkinleştirir veya devre dışı bırakır.",
+  "options.idle_boost.renderDistance.tooltip": "Minecraft etkin değilken en yüksek görüş mesafesini ayarlar.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Minecraft etkin değilken görüş mesafesi sınırını etkinleştirir veya devre dışı bırakır.",
+  "options.idle_boost.title": "Idle Boost Ayarları"
+}

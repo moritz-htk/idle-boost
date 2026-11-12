@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Deze mod vermindert het resourcegebruik wanneer Minecraft niet actief is.",
+  "options.idle_boost.backgroundDelay": "Activeringsvertraging",
+  "options.idle_boost.backgroundDelay.immediate": "Direct",
+  "options.idle_boost.backgroundDelay.seconds": "%s s",
+  "options.idle_boost.backgroundDelay.tooltip": "Stelt in hoelang Minecraft inactief moet zijn voordat de beperkingen van de beeldsnelheid en renderafstand worden toegepast. Bij 0 seconden worden de beperkingen direct toegepast.",
+  "options.idle_boost.debugModeToggle": "Debugmodus",
+  "options.idle_boost.debugModeToggle.tooltip": "Schakelt extra logberichten in de console in om te helpen bij het vinden of melden van bugs.",
+  "options.idle_boost.framerateLimit.tooltip": "Stelt de maximale beeldsnelheid in wanneer Minecraft niet actief is.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Schakelt de beperking van de beeldsnelheid in of uit wanneer Minecraft niet actief is.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Schakelt de functies van Idle Boost in of uit.",
+  "options.idle_boost.renderDistance.tooltip": "Stelt de maximale renderafstand in wanneer Minecraft niet actief is.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Schakelt de beperking van de renderafstand in of uit wanneer Minecraft niet actief is.",
+  "options.idle_boost.title": "Idle Boost-instellingen"
+}

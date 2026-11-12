@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Ten mod zmniejsza zużycie zasobów, gdy Minecraft nie jest aktywny.",
+  "options.idle_boost.backgroundDelay": "Opóźnienie aktywacji",
+  "options.idle_boost.backgroundDelay.immediate": "Natychmiast",
+  "options.idle_boost.backgroundDelay.seconds": "%s s",
+  "options.idle_boost.backgroundDelay.tooltip": "Określa, jak długo Minecraft musi być nieaktywny, zanim zostaną zastosowane ograniczenia liczby klatek na sekundę i odległości renderowania. Przy 0 sekundach ograniczenia są stosowane natychmiast.",
+  "options.idle_boost.debugModeToggle": "Tryb debugowania",
+  "options.idle_boost.debugModeToggle.tooltip": "Włącza dodatkowe komunikaty w konsoli, aby ułatwić znajdowanie lub zgłaszanie błędów.",
+  "options.idle_boost.framerateLimit.tooltip": "Ustawia maksymalną liczbę klatek na sekundę, gdy Minecraft nie jest aktywny.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Włącza lub wyłącza limit liczby klatek na sekundę, gdy Minecraft nie jest aktywny.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Włącza lub wyłącza funkcje moda Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Ustawia maksymalną odległość renderowania, gdy Minecraft nie jest aktywny.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Włącza lub wyłącza ograniczenie odległości renderowania, gdy Minecraft nie jest aktywny.",
+  "options.idle_boost.title": "Ustawienia Idle Boost"
+}

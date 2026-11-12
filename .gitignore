@@ -1,26 +1,33 @@
-# IDE-specific files
+# Gradle
+.gradle/
+bin/
+build/
+libs/
+out/
+
+# IntelliJ IDEA
 .idea/
-.vscode/
 *.iml
 *.ipr
 *.iws
-*.launch
 
-# Project metadata files
+# Eclipse
 .classpath
+.eclipse/
 .metadata
 .project
 .settings
 
-# Build and output directories
-.gradle/
-build/
-bin/
-classes/
-libs/
-out/
-output/
-run/
+# VS Code
+.vscode/
 
-# Local configuration files
-local.properties
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Minecraft Modding
+run/

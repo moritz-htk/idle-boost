@@ -1,83 +1,34 @@
 plugins {
-    id 'com.github.johnrengelman.shadow'
-    id 'me.shedaniel.unified-publishing'
-}
-
-architectury {
-    platformSetupLoomIde()
-    neoForge()
-}
-
-configurations {
-    common {
-        canBeResolved = true
-        canBeConsumed = false
-    }
-
-    shadowCommon
-    compileClasspath.extendsFrom common
-    runtimeClasspath.extendsFrom common
-    developmentNeoForge.extendsFrom common
-
-    shadowBundle {
-        canBeResolved = true
-        canBeConsumed = false
-    }
+    id 'multiloader-loader'
+    id 'com.hypherionmc.modutils.modpublisher'
 }
 
 repositories {
-    maven { url 'https://maven.neoforged.net/releases/' }
+    maven {
+        name = 'NeoForge'
+        url = 'https://maven.neoforged.net/releases/'
+    }
 }
 
 dependencies {
-    neoForge "net.neoforged:neoforge:${project.neoforge_version}"
-
-    common(project(path: ':common', configuration: 'namedElements')) { transitive false }
-    shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
+    forgeUserdev "net.neoforged:neoforge:${project.neoforge_version}:userdev"
 }
 
-processResources {
-    inputs.property 'version', project.version
-
-    filesMatching('META-INF/neoforge.mods.toml') {
-        expand version: project.version
+publisher {
+    apiKeys {
+        curseforge System.getenv('CURSEFORGE_TOKEN')
+        modrinth System.getenv('MODRINTH_TOKEN')
     }
-}
 
-shadowJar {
-    from project(':').file('LICENSE.md')
+    setDisplayName("[NeoForge ${project.minecraft_version}] Idle Boost ${project.version}")
+    setVersion(project.version)
+    setVersionType('release')
+    setGameVersions(project.minecraft_version)
+    setLoaders(project.name)
+    setChangelog(rootProject.file('changelog.md').text)
 
-    configurations = [project.configurations.shadowBundle]
-    archiveClassifier = 'dev-shadow'
-}
+    setArtifact(tasks.jar)
 
-remapJar {
-    input.set shadowJar.archiveFile
-}
-
-unifiedPublishing {
-    project {
-        displayName = "[NeoForge ${project.minecraft_version}] Idle Boost ${project.version}"
-        version = "${project.version}"
-        releaseType = "release"
-        gameVersions = ["${project.minecraft_version}"]
-        gameLoaders = ["neoforge"]
-        changelog = project(":").file("changelog.md").text
-
-        mainPublication tasks.remapJar
-
-        if (curseforgeApiKey != null) {
-            curseforge {
-                token = curseforgeApiKey
-                id = "1054545"
-            }
-        }
-
-        if (modrinthApiKey != null) {
-            modrinth {
-                token = modrinthApiKey
-                id = "REC6ythZ"
-            }
-        }
-    }
+    setCurseID('1054545')
+    setModrinthID('REC6ythZ')
 }

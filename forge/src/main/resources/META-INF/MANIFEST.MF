@@ -1,0 +1,1 @@
+Automatic-Module-Name: idle_boost.forge

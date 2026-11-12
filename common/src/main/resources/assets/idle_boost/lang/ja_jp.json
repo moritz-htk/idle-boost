@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Minecraftが非アクティブなときにリソース使用量を削減するModです。",
+  "options.idle_boost.backgroundDelay": "有効化までの待機時間",
+  "options.idle_boost.backgroundDelay.immediate": "即時",
+  "options.idle_boost.backgroundDelay.seconds": "%s秒",
+  "options.idle_boost.backgroundDelay.tooltip": "Minecraftが非アクティブになってからフレームレートと描画距離の制限を適用するまでの待機時間を設定します。0秒にすると、制限が即座に適用されます。",
+  "options.idle_boost.debugModeToggle": "デバッグモード",
+  "options.idle_boost.debugModeToggle.tooltip": "バグの発見や報告に役立つ追加のログをコンソールに出力します。",
+  "options.idle_boost.framerateLimit.tooltip": "Minecraftが非アクティブなときの最大フレームレートを設定します。",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Minecraftが非アクティブなときのフレームレート制限を有効または無効にします。",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Idle Boostの機能を有効または無効にします。",
+  "options.idle_boost.renderDistance.tooltip": "Minecraftが非アクティブなときの最大描画距離を設定します。",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Minecraftが非アクティブなときの描画距離制限を有効または無効にします。",
+  "options.idle_boost.title": "Idle Boostの設定"
+}

@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "यह मॉड Minecraft के सक्रिय न होने पर संसाधनों का उपयोग कम करता है।",
+  "options.idle_boost.backgroundDelay": "सक्रियण में देरी",
+  "options.idle_boost.backgroundDelay.immediate": "तुरंत",
+  "options.idle_boost.backgroundDelay.seconds": "%s सेकंड",
+  "options.idle_boost.backgroundDelay.tooltip": "निर्धारित करता है कि फ़्रेम दर और रेंडर दूरी की सीमाएँ लागू होने से पहले Minecraft कितनी देर तक निष्क्रिय रहना चाहिए। 0 सेकंड पर सीमाएँ तुरंत लागू हो जाती हैं।",
+  "options.idle_boost.debugModeToggle": "डीबग मोड",
+  "options.idle_boost.debugModeToggle.tooltip": "त्रुटियों को ढूँढने या उनकी रिपोर्ट करने में मदद के लिए कंसोल में अतिरिक्त लॉग संदेश दिखाता है।",
+  "options.idle_boost.framerateLimit.tooltip": "Minecraft के सक्रिय न होने पर अधिकतम फ़्रेम दर निर्धारित करता है।",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Minecraft के सक्रिय न होने पर फ़्रेम दर की सीमा को सक्षम या अक्षम करता है।",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Idle Boost की सुविधाओं को सक्षम या अक्षम करता है।",
+  "options.idle_boost.renderDistance.tooltip": "Minecraft के सक्रिय न होने पर अधिकतम रेंडर दूरी निर्धारित करता है।",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Minecraft के सक्रिय न होने पर रेंडर दूरी की सीमा को सक्षम या अक्षम करता है।",
+  "options.idle_boost.title": "Idle Boost के विकल्प"
+}

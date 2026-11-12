@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Minecraft가 비활성 상태일 때 리소스 사용량을 줄이는 모드입니다.",
+  "options.idle_boost.backgroundDelay": "활성화 지연 시간",
+  "options.idle_boost.backgroundDelay.immediate": "즉시",
+  "options.idle_boost.backgroundDelay.seconds": "%s초",
+  "options.idle_boost.backgroundDelay.tooltip": "Minecraft가 비활성 상태가 된 후 프레임률 및 렌더 거리 제한을 적용하기까지의 대기 시간을 설정합니다. 0초로 설정하면 제한이 즉시 적용됩니다.",
+  "options.idle_boost.debugModeToggle": "디버그 모드",
+  "options.idle_boost.debugModeToggle.tooltip": "버그를 찾거나 보고하는 데 도움이 되는 추가 로그를 콘솔에 출력합니다.",
+  "options.idle_boost.framerateLimit.tooltip": "Minecraft가 비활성 상태일 때의 최대 프레임률을 설정합니다.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Minecraft가 비활성 상태일 때 프레임률 제한을 켜거나 끕니다.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Idle Boost의 기능을 켜거나 끕니다.",
+  "options.idle_boost.renderDistance.tooltip": "Minecraft가 비활성 상태일 때의 최대 렌더 거리를 설정합니다.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Minecraft가 비활성 상태일 때 렌더 거리 제한을 켜거나 끕니다.",
+  "options.idle_boost.title": "Idle Boost 설정"
+}

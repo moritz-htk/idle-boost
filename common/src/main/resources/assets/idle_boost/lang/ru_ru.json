@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Этот мод снижает использование ресурсов, когда Minecraft неактивен.",
+  "options.idle_boost.backgroundDelay": "Задержка активации",
+  "options.idle_boost.backgroundDelay.immediate": "Сразу",
+  "options.idle_boost.backgroundDelay.seconds": "%s с",
+  "options.idle_boost.backgroundDelay.tooltip": "Задаёт время, в течение которого Minecraft должен оставаться неактивным до применения ограничений частоты кадров и дальности прорисовки. При значении 0 секунд ограничения применяются сразу.",
+  "options.idle_boost.debugModeToggle": "Режим отладки",
+  "options.idle_boost.debugModeToggle.tooltip": "Включает вывод дополнительных сообщений в консоль, чтобы помочь найти ошибки или сообщить о них.",
+  "options.idle_boost.framerateLimit.tooltip": "Задаёт максимальную частоту кадров, когда Minecraft неактивен.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Включает или отключает ограничение частоты кадров, когда Minecraft неактивен.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Включает или отключает функции Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Задаёт максимальную дальность прорисовки, когда Minecraft неактивен.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Включает или отключает ограничение дальности прорисовки, когда Minecraft неактивен.",
+  "options.idle_boost.title": "Настройки Idle Boost"
+}
