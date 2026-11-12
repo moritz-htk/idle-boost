@@ -1,45 +1,44 @@
 {
   "schemaVersion": 1,
-  "id": "idle_boost",
-  "version": "${version}",
-  "name": "Idle Boost",
-  "description": "This mod optimizes performance when Minecraft is running in the background.",
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
   "authors": [
-    "moritz_htk"
+    "${mod_author}"
   ],
   "contact": {
-    "homepage": "https://sites.google.com/view/moritz-htk/mods/idle-boost",
-    "issues": "https://github.com/moritz-htk/idle-boost/issues",
-    "sources": "https://github.com/moritz-htk/idle-boost"
+    "email": "info@kyronis.net",
+    "homepage": "${mod_homepage}",
+    "issues": "${mod_github}/issues",
+    "sources": "${mod_github}"
   },
-  "license": "moritz_htk Software License Agreement (mSLA)",
-  "icon": "assets/idle_boost/icon.png",
+  "license": "${mod_license}",
+  "icon": "${mod_icon}",
   "environment": "client",
   "entrypoints": {
     "client": [
-      "net.moritz_htk.idle_boost.fabric.IBFabric"
+      "net.kyronis.idle_boost.fabric.IBFabric"
     ],
     "modmenu": [
-      "net.moritz_htk.idle_boost.fabric.config.IBModMenuImplementation"
+      "net.kyronis.idle_boost.fabric.integration.IBModMenuImplementation"
     ]
   },
   "depends": {
-    "fabricloader": ">=0.16.10",
-    "minecraft": ">=1.21.1",
-    "java": ">=21",
+    "java": ">=${java_version}",
+    "minecraft": ">=${minecraft_version}",
+    "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": "*"
   },
   "recommends": {
-    "modmenu": ">=11.0.3"
+    "modmenu": ">=11"
   },
   "custom": {
     "modmenu": {
       "update_checker": true,
       "links": {
         "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/idle-boost",
-        "modmenu.github_releases": "https://github.com/moritz-htk/idle-boost/releases",
-        "modmenu.modrinth": "https://modrinth.com/mod/idle-boost",
-        "modmenu.paypal": "https://www.paypal.com/donate/?hosted_button_id=CADH35AVDHEMW"
+        "modmenu.modrinth": "https://modrinth.com/mod/idle-boost"
       }
     }
   }

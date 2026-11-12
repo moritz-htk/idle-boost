@@ -1,12 +1,16 @@
 {
-  "modmenu.descriptionTranslation.idle_boost": "This mod optimizes performance when Minecraft is running in the background.",
+  "modmenu.descriptionTranslation.idle_boost": "This mod reduces resource usage when Minecraft is not active.",
+  "options.idle_boost.backgroundDelay": "Activation Delay",
+  "options.idle_boost.backgroundDelay.immediate": "Immediate",
+  "options.idle_boost.backgroundDelay.seconds": "%s s",
+  "options.idle_boost.backgroundDelay.tooltip": "Sets how long Minecraft must be inactive before the frame rate and render distance limits are applied. At 0 seconds, the limits are applied immediately.",
   "options.idle_boost.debugModeToggle": "Debug Mode",
-  "options.idle_boost.debugModeToggle.tooltip": "Enables or disables debug mode for additional output to the console. (Useful for finding or reporting bugs)",
-  "options.idle_boost.framerateLimit.tooltip": "Sets the max framerate when Minecraft is inactive.",
-  "options.idle_boost.framerateLimitToggle.tooltip": "Enables or disables whether the max framerate should be limited when Minecraft is inactive.",
+  "options.idle_boost.debugModeToggle.tooltip": "Enables additional console logging to help find or report bugs.",
+  "options.idle_boost.framerateLimit.tooltip": "Sets the maximum frame rate when Minecraft is not active.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Enables or disables the frame rate limit when Minecraft is not active.",
   "options.idle_boost.modToggle": "Idle Boost",
-  "options.idle_boost.modToggle.tooltip": "Enables or disables the Idle Boost features.",
-  "options.idle_boost.renderDistance.tooltip": "Sets the render distance when Minecraft is inactive.",
-  "options.idle_boost.renderDistanceToggle.tooltip": "Enables or disables whether the render distance should be limited when Minecraft is inactive.",
+  "options.idle_boost.modToggle.tooltip": "Enables or disables the features of Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Sets the maximum render distance when Minecraft is not active.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Enables or disables the render distance limit when Minecraft is not active.",
   "options.idle_boost.title": "Idle Boost Options"
 }

@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "يقلل هذا المود من استخدام الموارد عندما تكون Minecraft غير نشطة.",
+  "options.idle_boost.backgroundDelay": "تأخير التفعيل",
+  "options.idle_boost.backgroundDelay.immediate": "فورًا",
+  "options.idle_boost.backgroundDelay.seconds": "%s ث",
+  "options.idle_boost.backgroundDelay.tooltip": "يحدد المدة التي يجب أن تظل فيها Minecraft غير نشطة قبل تطبيق حدود معدل الإطارات ومسافة العرض. عند ضبط المدة على 0 ثانية، تُطبّق الحدود فورًا.",
+  "options.idle_boost.debugModeToggle": "وضع تصحيح الأخطاء",
+  "options.idle_boost.debugModeToggle.tooltip": "يفعّل رسائل سجل إضافية في وحدة التحكم للمساعدة في العثور على الأخطاء أو الإبلاغ عنها.",
+  "options.idle_boost.framerateLimit.tooltip": "يحدد الحد الأقصى لمعدل الإطارات عندما تكون Minecraft غير نشطة.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "يفعّل أو يعطّل تقييد معدل الإطارات عندما تكون Minecraft غير نشطة.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "يفعّل أو يعطّل ميزات Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "يحدد الحد الأقصى لمسافة العرض عندما تكون Minecraft غير نشطة.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "يفعّل أو يعطّل تقييد مسافة العرض عندما تكون Minecraft غير نشطة.",
+  "options.idle_boost.title": "خيارات Idle Boost"
+}

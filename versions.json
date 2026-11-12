@@ -1,5 +1,5 @@
 [
-  { "version": "1.21.1", "latestVersion": "1.2.0+1.21.1", "modLoader": "Fabric • NeoForge", "support": "Inactive" },
+  { "version": "1.21.1", "latestVersion": "2.0.0+1.21.1", "modLoader": "Fabric • Forge • NeoForge", "support": "Active" },
   { "version": "1.21", "latestVersion": "1.1.1+1.21", "modLoader": "Fabric • NeoForge", "support": "Stopped" },
   { "version": "1.20.6", "latestVersion": "1.2.0+1.20.6", "modLoader": "Fabric • NeoForge", "support": "Stopped" },
   { "version": "1.20.1", "latestVersion": "1.2.0+1.20.1", "modLoader": "Fabric • Forge", "support": "Stopped" }

@@ -1,12 +1,16 @@
 {
-  "modmenu.descriptionTranslation.idle_boost": "Diese Mod optimiert die Leistung, wenn Minecraft im Hintergrund läuft.",
+  "modmenu.descriptionTranslation.idle_boost": "Diese Mod reduziert den Ressourcenverbrauch, wenn Minecraft nicht aktiv ist.",
+  "options.idle_boost.backgroundDelay": "Aktivierungsverzögerung",
+  "options.idle_boost.backgroundDelay.immediate": "Sofort",
+  "options.idle_boost.backgroundDelay.seconds": "%s s",
+  "options.idle_boost.backgroundDelay.tooltip": "Legt fest, wie lange Minecraft nicht aktiv sein muss, bevor Bildrate und Sichtweite begrenzt werden. Bei 0 Sekunden werden die Begrenzungen sofort aktiviert.",
   "options.idle_boost.debugModeToggle": "Debug-Modus",
-  "options.idle_boost.debugModeToggle.tooltip": "Aktiviert oder deaktiviert den Debug-Modus für zusätzliche Ausgaben in der Konsole. (Nützlich zum Finden oder Melden von Fehlern)",
-  "options.idle_boost.framerateLimit.tooltip": "Legt die maximale Bildrate fest, wenn Minecraft inaktiv ist.",
-  "options.idle_boost.framerateLimitToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der maximalen Bildrate, wenn Minecraft inaktiv ist.",
+  "options.idle_boost.debugModeToggle.tooltip": "Aktiviert zusätzliche Protokollausgaben in der Konsole, um Fehler leichter zu finden oder zu melden.",
+  "options.idle_boost.framerateLimit.tooltip": "Legt die maximale Bildrate fest, wenn Minecraft nicht aktiv ist.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der Bildrate, wenn Minecraft nicht aktiv ist.",
   "options.idle_boost.modToggle": "Idle Boost",
-  "options.idle_boost.modToggle.tooltip": "Aktiviert oder deaktiviert die Idle Boost-Funktionen.",
-  "options.idle_boost.renderDistance.tooltip": "Legt die Sichtweite fest, wenn Minecraft inaktiv ist.",
-  "options.idle_boost.renderDistanceToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der Sichtweite, wenn Minecraft inaktiv ist.",
-  "options.idle_boost.title": "Idle Boost Optionen"
+  "options.idle_boost.modToggle.tooltip": "Aktiviert oder deaktiviert die Funktionen von Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Legt die maximale Sichtweite fest, wenn Minecraft nicht aktiv ist.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Aktiviert oder deaktiviert die Begrenzung der Sichtweite, wenn Minecraft nicht aktiv ist.",
+  "options.idle_boost.title": "Idle Boost-Einstellungen"
 }

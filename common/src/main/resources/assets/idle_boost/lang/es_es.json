@@ -1,0 +1,16 @@
+{
+  "modmenu.descriptionTranslation.idle_boost": "Este mod reduce el uso de recursos cuando Minecraft no está activo.",
+  "options.idle_boost.backgroundDelay": "Retraso de activación",
+  "options.idle_boost.backgroundDelay.immediate": "Inmediato",
+  "options.idle_boost.backgroundDelay.seconds": "%s s",
+  "options.idle_boost.backgroundDelay.tooltip": "Establece cuánto tiempo debe permanecer inactivo Minecraft antes de aplicar los límites de la tasa de fotogramas y la distancia de renderizado. Con 0 segundos, los límites se aplican inmediatamente.",
+  "options.idle_boost.debugModeToggle": "Modo de depuración",
+  "options.idle_boost.debugModeToggle.tooltip": "Activa mensajes adicionales en la consola para ayudar a encontrar o notificar errores.",
+  "options.idle_boost.framerateLimit.tooltip": "Establece la tasa máxima de fotogramas cuando Minecraft no está activo.",
+  "options.idle_boost.framerateLimitToggle.tooltip": "Activa o desactiva el límite de la tasa de fotogramas cuando Minecraft no está activo.",
+  "options.idle_boost.modToggle": "Idle Boost",
+  "options.idle_boost.modToggle.tooltip": "Activa o desactiva las funciones de Idle Boost.",
+  "options.idle_boost.renderDistance.tooltip": "Establece la distancia máxima de renderizado cuando Minecraft no está activo.",
+  "options.idle_boost.renderDistanceToggle.tooltip": "Activa o desactiva el límite de la distancia de renderizado cuando Minecraft no está activo.",
+  "options.idle_boost.title": "Opciones de Idle Boost"
+}
