@@ -45,10 +45,8 @@ public class IBForge {
             MinecraftForge.EVENT_BUS.addListener(Client::onClientTick);
         }
 
-        private static void onClientTick(TickEvent.ClientTickEvent event) {
-            if (event.phase == TickEvent.Phase.START) {
-                IBWindowActivityHandler.handleClientTick();
-            }
+        private static void onClientTick(TickEvent.ClientTickEvent.Pre event) {
+            IBWindowActivityHandler.handleClientTick();
         }
     }
 }

@@ -19,20 +19,29 @@ package net.kyronis.idle_boost.config;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.OptionInstance;
 import net.minecraft.client.Options;
+import net.minecraft.client.gui.components.OptionsList;
+import net.minecraft.client.gui.screens.OptionsSubScreen;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.screens.options.OptionsSubScreen;
 import net.minecraft.network.chat.Component;
 
 /**
  * Screen for configuring the Idle Boost mod.
  */
 public class IBConfigScreen extends OptionsSubScreen {
+    private OptionsList list;
+
     public IBConfigScreen(Screen screen) {
         super(screen, Minecraft.getInstance().options, Component.translatable("options.idle_boost.title"));
     }
 
     @Override
-    protected void addOptions() {
+    protected void init() {
+        this.list = this.addRenderableWidget(new OptionsList(this.minecraft, this.width, this.height, this));
+        this.addOptions();
+        super.init();
+    }
+
+    private void addOptions() {
         IBConfig config = IBConfigManager.getConfig();
 
         this.list.addBig(OptionInstance.createBoolean(
@@ -91,6 +100,12 @@ public class IBConfigScreen extends OptionsSubScreen {
                 config.debugModeToggle,
                 enabled -> config.debugModeToggle = enabled
         ));
+    }
+
+    @Override
+    protected void repositionElements() {
+        super.repositionElements();
+        this.list.updateSize(this.width, this.layout);
     }
 
     @Override
